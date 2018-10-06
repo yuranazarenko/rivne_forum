@@ -1,0 +1,60 @@
+
+@import url('https://fonts.googleapis.com/css?family=Underdog|Bangers|Skranji:400,700');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	//width: 100%;
+	background-image: url(../images/gotel_fon.jpg);
+	margin: 0 auto;
+	min-width: 320px;
+}
+.contSleap{
+	padding: 20px;
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+	border-bottom: 1px solid #000;
+	font-size: 16pt;
+}
+.left{
+	float:left;
+	width: 300px;
+	margin-right: 10px;
+}
+h2{
+	text-align: center;
+}
+iframe{
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+	float: right;
+}
+#DIVmenu>.menu>li>a{
+	color: #000;
+}
+#DIVmenu>.menu>li span{
+	background-color: #231918;
+}
+#DIVmenu>.menu li:hover a{
+	animation-name: color_black2;
+}
+@keyframes color_black2{
+	from{color: #231918;}
+	to{color:#fff;}
+}
+@media screen and (max-width: 767px){
+	@keyframes color_black2{
+			from{color: #231918;}
+			to{color:#231918;}
+	}
+}
+.fixed{
+	background-color: #f5e3d9;
+}
+.color{
+	background-color: #f5e3d9;
+}

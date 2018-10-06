@@ -1,0 +1,240 @@
+nav{
+	width: 730px;
+	margin: 0 auto;
+	font-family: Underdog, serif ;
+	font-size: 16pt;
+	//position: relative;
+}
+/*клас який з'являється при прокрутці скролом*/
+.fixed{
+	position: fixed;
+	z-index: 800;
+	top:0;
+	//background-color: #000;
+}
+a{
+	text-decoration: none;
+	color:#000;
+}
+#IcoMenu{
+		display: none;
+		width: 40px;
+		height: 40px;
+		background-color: #fff;
+		text-align: center;
+}
+#IcoMenu p{
+	font-size: 33px;
+	line-height: 40px;
+}
+ul{
+	display: block;
+	list-style: none;
+}
+.menu>li{ 
+	float: left;
+	position: relative;
+	margin: 0 20px 0 0 ;
+	z-index: 100;
+}
+.menu>li:nth-child(5){
+	margin: 0;
+}
+.menu>li>a{
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	padding: 10px;
+	width: 130px;
+	text-decoration: none;
+	color:#fff;
+	z-index: 200;
+	animation-delay: 500ms;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	text-align: center;
+}
+.menu>li span{
+	display: block;
+	position: absolute;
+	background-color: #fff;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	z-index: 10;
+}
+.menu li span:nth-child(2) {
+	top: 0;
+}
+.menu li span:nth-child(3) {
+	top: 0;
+	right: 0;
+}
+.menu li span:nth-child(4) {
+	bottom: 0;
+	right: 0;
+}
+.menu li span:nth-child(5) {
+	bottom: 0;
+}
+.menu li span:nth-child(6) {
+	bottom: 0;
+	right: 0;
+	width: 130px;
+	animation-delay: 500ms;
+}
+.menu li:hover span:nth-child(2),
+.menu li:hover span:nth-child(4){
+	animation-name: animat_height;
+}
+@keyframes animat_height{
+	from{width: 2px; height: 2px;}
+	to{height: 44px; width: 2px;}
+}
+.menu li:hover span:nth-child(3),
+.menu li:hover span:nth-child(5){
+	animation-name: animat_width;
+}
+@keyframes animat_width{
+	from{width: 2px; height: 2px;}
+	to{width: 130px; height: 2px;}
+}
+.menu li:hover span:nth-child(6) {
+	animation-name: animat_background;
+}
+@keyframes animat_background{
+	from{height: 1px;}
+	to{height: 44px;}
+}
+.menu li:hover a{
+	animation-name: color_black;
+}
+@keyframes color_black{
+	from{color: #fff;}
+	to{color:#000;}
+}
+.SUBmenu{
+	display: none;
+	position: absolute;
+	width: 150px;
+	top: 44px;
+	left:0;
+}
+.SUBmenu1{
+	transition-property: all;
+	animation-duration: 500ms;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	transform: rotateY(90deg);
+}
+.SUBmenu li {
+	display: block;
+	border: 1px solid #fff;
+	background-color: #231918;
+}
+.SUBmenu li > a {
+	display: block;
+	padding: 10px;
+	color:white;
+	//background-color: red;
+	text-decoration: none;
+}
+.menu li:hover  .SUBmenu{
+	display: block;
+}
+.menu li:hover  .SUBmenu li:nth-child(1){
+	animation-name: SUBmenu1_wiew;
+}
+.menu li:hover  .SUBmenu li:nth-child(2){
+	animation-name: SUBmenu1_wiew;
+	animation-delay: 100ms;
+}
+.menu li:hover  .SUBmenu li:nth-child(3){
+	animation-name: SUBmenu1_wiew;
+	animation-delay: 200ms;
+}
+.menu li:hover  .SUBmenu li:nth-child(4){
+	animation-name: SUBmenu1_wiew;
+	animation-delay: 300ms;
+}
+.menu li:hover  .SUBmenu li:nth-child(5){
+	animation-name: SUBmenu1_wiew;
+	animation-delay: 400ms;
+}
+@keyframes SUBmenu1_wiew{
+	from{transform: rotateY(100deg);}
+	to{transform: rotateY(0deg);}
+}
+.SUBmenu1:hover a{
+	background-color: #fff;
+	color: #000;
+}
+@media screen and (max-width: 767px) {
+	nav{
+		//width: 100%;
+		margin: 0 ;
+	}
+	li{
+		display: inline;
+		width: 100%;
+		//background-color: lime;
+		
+	}
+	ul{
+		display: inline;
+		width: 100%;
+	}
+	a{
+		width: 100%;
+	}
+	.SUBmenu{
+		//display: block;
+		position: initial;
+		width: 100%;
+	}
+	.SUBmenu1{
+		transform: initial;
+		animation-name: none;
+		margin-left: 20px;
+	}
+	@keyframes SUBmenu1_wiew{
+		from{transform: rotateY(0deg);}
+		to{transform: rotateY(0deg);}
+	}
+	@keyframes animat_height{
+		from{width: 0px; height: 0px;}
+		to{height: 0px; width: 0px;}
+	}
+	@keyframes animat_width{
+		from{width: 0px; height: 0px;}
+		to{height: 0px; width: 0px;}
+	}
+	@keyframes color_black{
+		from{color: #fff;}
+		to{color: #fff;}
+	}
+	@keyframes animat_background{
+		from{height: 0px;}
+		to{height: 0px;}
+	}
+	.menu>li:hover>a::before{
+		content: " \2207 \00A0 \00A0";
+	}
+	.menu>li:last-child:hover>a::before{
+		content: "\00A0 \00A0";
+	}
+	.menu>li:hover>a{
+		//background-color: #fff;
+	}
+	.menu {
+		display: none;
+	}
+	#IcoMenu{
+		display: block;
+	}
+	#simvolBack{
+		display: none;
+	}
+
+}

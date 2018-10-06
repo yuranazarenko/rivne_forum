@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Underdog|Bangers|Skranji:400,700');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	//width: 100%;
+	background-image: url(../images/sky.jpg);
+	margin: 0 auto;
+	min-width: 300px;
+	padding-left: 5px;
+}
+main{
+	//width: 60%;
+	margin: 0 auto;
+}
+#kategor a{
+	display: block;
+	float: left;
+	margin: 20px 5px 0 0;
+	text-decoration: none;
+	color: #a71313;
+	width: 150px;
+	height: 100px;
+	position: relative;
+}
+#user_menu>a{
+	display: block;
+	width: 120px;
+	height: 44px;
+	text-align: center;
+	color:#fff;
+	text-decoration: none;
+	font-size: 20pt;
+	border:1px solid #fff;
+	float: left;
+	margin-right: 5px;
+}
+#user_date a{
+	display: block;
+	float: right;
+}
+#foto a{
+	display: block;
+	width:150px;
+	height: 150px;
+}
+.all_massage .div_control a{
+	color:#fff;
+	text-decoration: none;
+	margin-right: 10px;
+}
+#kategor img{
+	width: 150px;
+	height: 100px;
+	transition: all 1s;
+	filter: grayscale(100%);
+}
+#user_date img{
+	width: 44px;
+	height: 44px;
+	float: right;
+}
+#foto img{
+	display: block;
+	width:150px;
+	height: 150px;	
+}
+.all_massage .div_control img{
+	width: 20px;
+	height: 20px;
+	margin-top: 0px;
+}
+.all_massage img{
+	margin: 5px 0 0 20px;
+	width: 60px;
+	height: 60px;
+}
+#setings .im_ok_no{
+	width: 50px;
+	height: 50px;
+}
+.bot_ok{
+	position: absolute;
+	bottom: 0px;
+	right: 55px;
+}
+.bot_no{
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+#user_date p{
+	color: #fff;
+	font-size: 20px;
+	margin: 10px 10px 0 10px;
+	display: block;
+	float: right;
+}
+#chack>p{
+	color: #fff;
+	font-size: 30pt;
+	display: block;
+	border: 2px solid #fff;
+	margin: 0 auto;
+	width: 80%;
+	padding: 10px;
+}
+#content p{
+	color: #fff;
+	font-size: 20pt;
+}
+#foto p{
+	color: #fff;
+	font-size: 16px;
+	width: 150px;
+}
+#massege p{
+	color: #fff;
+	font-size: 20pt;
+}
+.all_massage p{
+	color: #fff;
+	display: block;
+	width: fit-content;
+	margin: 0 auto;
+	font-size: 10pt;
+}
+div>a>p{
+	position: absolute;
+	top:20px;
+	left:20px;
+	font-size: 20pt;
+	transition: all 1s;
+}
+#kategor a:hover img {
+	filter: grayscale(0%);
+}
+#kategor a:hover p {
+	filter: opacity(0%);
+}
+#chack{
+	float: left;
+	width: 100%;
+	margin-top: 20px;
+}
+#kategor{
+	width: fit-content;
+	height: fit-content;
+	//float: left;
+	margin: 0 auto;
+}
+#user_menu{
+	height: 50px;
+	background-color: #231918;
+	padding: 3px;
+}
+#user_date{
+	float: right;
+	width: 250px;
+	height:44px;
+}
+#setings{
+	width: 96%;
+	margin: 0 auto;
+	height: 500px;
+	border: 2px solid #fff;
+	position: relative;
+}
+#pass span{
+	color: #fff;
+
+}
+#vis_pass{
+	visibility: hidden;
+}
+#chek:checked ~ #vis_pass{
+	visibility: visible;
+}
+#foto #foto_add{
+	color: lime;
+	font-size: 50pt;
+	position: absolute;
+	z-index: 40;
+	top:0px;
+	left: 0px;
+}
+#content textarea{
+	width: 95%;
+	height: 60px;
+}
+.div_user{
+	width: 100px;
+	height: 100px;
+	//background-color: red;
+	float: left;
+	border-left: 1px solid #fff;
+}
+.div_text{
+	height: 100px;
+	//background-color: blue;
+	float: right;
+	border-left: 1px solid #fff;
+	padding: 3px;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.all_massage{
+	margin-top: 3px;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.div_control{
+	height: 30px;
+	width: 100%;
+	clear: both;
+	//background-color: green;
+	border: 1px solid #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.hidden{
+	visibility: hidden;
+}
+.visible{
+	visibility: visible;
+}
+
+
+
+
+

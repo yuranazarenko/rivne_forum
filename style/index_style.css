@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Underdog|Bangers|Skranji:400,700');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.fixed{
+	background-color: #231918;
+}
+.color{
+	background-color: #231918;
+}
+body{
+	//width: 100%;
+	background-image: url(../images/fon.jpg);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-color: #000;
+	margin: 0 auto;
+	min-width: 320px;
+}
+main{
+	position: relative;
+	//height: 900px;
+	width: 100%;
+	top: 40px;
+}
+#history, #klimat, #study, #kulture, #administrat{
+	display: none;
+	width: 80%;
+	border: 2px solid #ddd;
+	color: #ddd;
+	margin: 0 auto;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+.conteiner p, li{
+	font-size: 16pt;
+	
+}
+#rivne{
+	display: block;
+	width: 80%;
+	color: #eee;
+	margin: 0 auto;
+	font-family: Caveat, serif ;
+}
+h4{
+	display: block;
+	width: 285px;
+	padding-top: 20px;
+	margin: 0 auto;
+	font-size: 120pt;
+	font-family: Caveat, serif ;
+}
+#rivne>p{
+	display: block;
+	width: 210px;
+	margin: 0 auto;
+	font-size: 20pt;
+}
+.conteiner{
+	margin: 0 auto;
+	//width: fit-content;
+	width: 100%;
+	float: left;
+}
+main p, h2{
+	display: block;
+	clear: left;
+	margin: 10px;
+	text-indent: 1.5em;
+    text-align: justify;
+}
+h2{
+	font-size: 30pt;
+	text-align: center;
+}
+main>li{
+	display: block;
+	clear: left;
+	margin: 10px;
+	text-indent: 1.5em;
+    text-align: justify;
+    //margin-bottom: 15px;
+}
+main ul{
+	list-style-type: circle;
+	margin-left: 20px;
+}
+#onlyForm {
+	display: block;
+	width: 410px;
+	margin:0 auto;
+	border: 2px solid #fff;
+	background-color: rgba(255, 255, 255, 0.1);
+	color: #fff;
+	font-size: 35pt;
+	margin-top: 200px;
+	padding-left: 20px;
+}

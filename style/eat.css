@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Underdog|Bangers|Skranji:400,700');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	//width: 100%;
+	background-image: url(../images/sky.jpg);
+	margin: 0 auto;
+	min-width: 320px;
+}
+main{
+	width: 60%;
+	margin: 0 auto;
+}
+.contEat, .contSleap{
+	padding: 20px;
+	margin: 0 auto;
+	width: 100%;
+	float: left;
+	color: #ccc;
+	border-bottom: 1px solid #ccc;
+	font-size: 16pt;
+	text-align: justify;
+}
+.contEat>p, .contSleap>p{
+	text-indent: 1.5em;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left{
+	float:left;
+	width: 300px;
+	margin-right: 10px;
+}
+h2{
+	color: #ccc;
+	text-align: center;
+}
+iframe{
+	width: 200px;
+	height: 200px;
+	margin-top: 20px;
+	float: right;
+}
+.fixed{
+	background-color: #231918;
+}
+
+/*.SUBmenu1 a{
+	background-color: #ef525b;
+}
+.fixed{
+	background-color: #ef525b;
+}
+.color{
+	background-color: #ef525b;
+}*/
+@media screen and (max-width: 1500px){
+	main{
+		width: 80%;
+	}
+}
+@media screen and (max-width: 767px){
+	main{
+		width: 96%;
+	}
+}

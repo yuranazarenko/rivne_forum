@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Underdog|Bangers|Skranji:400,700');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	//filter: blur(2px);
+	background-image: url(../images/sky.jpg);
+	min-width: 320px;	
+}
+.slid{
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	float: left;
+	border: 2px solid silver;
+	margin: 7px;
+	box-shadow: 3px 3px 5px #ccc;
+	background-color: #696969;
+}
+.img_slid{
+	display: block;
+	margin: auto auto;
+	transition-property: all;
+	transition-duration: 500ms;
+}
+.img_slid:hover{
+	transform: scale(1.1);
+}
+/*.menu>li>a{
+	color: #000;
+	font-weight: bolder;
+}*/
+/*#DIVmenu>.menu>li span{
+	background-color: #231918;
+}*/
+/*#DIVmenu>.menu li:hover a{
+	animation-name: color_black2;
+}*/
+/*@keyframes color_black2{
+	from{color: #231918;}
+	to{color:#fff;}
+}
+@media screen and (max-width: 767px){
+	@keyframes color_black2{
+			from{color: #231918;}
+			to{color:#231918;}
+	}
+}*/
+#allFotos{
+	margin: 0 auto;
+}
+@media screen and (max-width: 1515px){
+	#allFotos{
+		width: 1301px;
+	}
+}
+@media screen and (max-width: 1301px){
+	#allFotos{
+		width: 1087px;
+	}
+}
+@media screen and (max-width: 1087px){
+	#allFotos{
+		width: 873px;
+	}
+}
+@media screen and (max-width: 873px){
+	#allFotos{
+		width: 659px;
+	}
+}
+@media screen and (max-width: 659px){
+	#allFotos{
+		width: 445px;
+	}
+}
+@media screen and (max-width: 445px){
+	#allFotos{
+		width: 230px;
+	}
+}
+.fixed{
+	//background-color: #696969;
+	background-color: #231918;
+}
+.color{
+	background-color: #696969;
+}
