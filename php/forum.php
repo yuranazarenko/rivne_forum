@@ -10,7 +10,6 @@
   	window.dataLayer = window.dataLayer || [];
   	function gtag(){dataLayer.push(arguments);}
   	gtag('js', new Date());
-
   	gtag('config', 'UA-124877576-1');
 	</script>
 	<title>Rivne</title>
@@ -47,6 +46,6 @@
 	?>
 </main>
 <footer></footer>
-
+<script type="text/javascript" src="../script/forum.js"></script>
 </body>
 </html>

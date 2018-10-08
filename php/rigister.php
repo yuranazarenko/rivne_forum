@@ -6,10 +6,6 @@
 		$password=$_POST['password'];
 		$email=$_POST['email'];
 		$image="../images/user.png";
-		// define("DB_HOST", "db4free.net");
-		// define("DB_LOGIN", "nazarenko");
-		// define("DB_PASSWORD", "");
-		// define("DB_NAME", "rivneppua");
 		define("DB_HOST", "sovabarm.mysql.tools");
 		define("DB_LOGIN", "sovabarm_yura");
 		define("DB_PASSWORD", "lxnyzy5m");
@@ -25,6 +21,8 @@
 					VALUES('$name', '$login', '$password', '$image', '$email')";
 		$res2 = mysqli_query($link, $text2);
 		mysqli_close($link);
+		setcookie("login",$login,time()+3600,"/", "yura.sovabarmak.in.ua");
+		header("Location: ../php/forum.php");
 	}
 ?>
 
